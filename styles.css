@@ -188,8 +188,48 @@ body {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     color: #fff;
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #333;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-btn:hover {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+    color: #fff;
+}
+
+.filter-btn .icon {
+    font-size: 1.1rem;
 }
 
 .work-grid {
@@ -258,6 +298,18 @@ body {
 .work-description {
     font-size: 1rem;
     opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.work-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid #ff6b6b;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #ff6b6b;
+    font-weight: 500;
 }
 
 /* About Section */
@@ -365,6 +417,73 @@ body {
     text-decoration: none;
 }
 
+/* Social Links in Contact Section */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.social-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-btn:hover {
+    background: rgba(255, 107, 107, 0.1);
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    font-size: 1.2rem;
+}
+
+.social-btn.youtube:hover {
+    border-color: #ff0000;
+    color: #ff0000;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.social-btn.vimeo:hover {
+    border-color: #1ab7ea;
+    color: #1ab7ea;
+    background: rgba(26, 183, 234, 0.1);
+}
+
+.social-btn.instagram:hover {
+    border-color: #e4405f;
+    color: #e4405f;
+    background: rgba(228, 64, 95, 0.1);
+}
+
+.social-btn.facebook:hover {
+    border-color: #1877f2;
+    color: #1877f2;
+    background: rgba(24, 119, 242, 0.1);
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -424,17 +543,24 @@ body {
 
 .footer-links {
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    align-items: center;
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .footer-links a:hover {
     color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    transform: translateY(-2px);
 }
 
 .footer-bottom {
@@ -513,6 +639,35 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+    
+    .category-filters {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 0.8rem;
+    }
+    
+    .filter-btn .icon {
+        font-size: 1rem;
+    }
+    
+    .social-buttons {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .social-btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+    
+    .footer-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }/*
  Video Modal Styles */
 .video-modal {
@@ -572,9 +727,16 @@ body {
 
 /* Loading placeholder for thumbnails */
 .work-video {
-    background: linear-gradient(45deg, #333, #444);
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
     background-size: 400% 400%;
     animation: shimmer 2s ease-in-out infinite;
+    min-height: 250px;
+    display: block;
+}
+
+.work-video[src*="placeholder"] {
+    background: #1a1a1a;
+    animation: none;
 }
 
 @keyframes shimmer {

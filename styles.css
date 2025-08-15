@@ -43,7 +43,6 @@ body {
 .logo {
     height: 50px;
     width: auto;
-    filter: brightness(0) invert(1); /* Makes logo white for dark navbar */
 }
 
 .nav-menu {
@@ -421,7 +420,6 @@ body {
 
 .footer-logo img {
     height: 40px;
-    filter: brightness(0) invert(1);
 }
 
 .footer-links {

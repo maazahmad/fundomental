@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundomental Films - Video Production & Editing</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Fundomental Films" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fundomental Films</h1>
+            <p class="hero-subtitle">Video Production & Editing Agency</p>
+            <p class="hero-description">Creating compelling visual stories that captivate and inspire</p>
+            <a href="#work" class="cta-button">View Our Work</a>
+        </div>
+        <div class="hero-video">
+            <iframe src="https://player.vimeo.com/video/839875942?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" 
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="work-grid">
+                <!-- Video items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Fundomental Films</h2>
+                    <p>We are a creative video production and editing agency specializing in crafting compelling visual narratives. Our team combines technical expertise with artistic vision to deliver exceptional results for our clients.</p>
+                    <p>From concept to completion, we handle every aspect of video production, ensuring your story is told with impact and authenticity.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to bring your vision to life? Let's discuss your next project.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:info@fundomentalfilms.com">info@fundomentalfilms.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Project Type">
+                    <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Fundomental Films">
+                </div>
+                <div class="footer-links">
+                    <a href="https://vimeo.com/fundomentalfilms" target="_blank">Vimeo</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fundomental Films. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
